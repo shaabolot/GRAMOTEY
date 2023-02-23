@@ -43,11 +43,20 @@ i{
 
 #nav {
     width: 100%;
-    border-top: 15px solid #1a633bfd;
     background-color: #ffffff8e;
     position: fixed;
     z-index: 2;
 }
+
+.nav_slogan{
+    height: 50px;
+    width: 100%;
+    background-color: #1a633bfd;
+    color: #cef4f0;
+    text-align: center;
+    padding: 15px 0;
+}
+
 
 .nav_content {
     height: 70px;
@@ -75,18 +84,9 @@ a {
     color: #222222;
 }
 
-.nav_select{
-    width: 120px;
-    overflow: hidden;
-}
-
-select {
-    width: 100%;
-    border: none;
-    color: #222222;
-    background-color: #f8f5f509;
-    font-size:17px;
-}
+/* .parents, .students{
+    display: none;
+} */
 
 /*! nav */
 /** header */
