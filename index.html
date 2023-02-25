@@ -15,6 +15,7 @@
 </head>
 
 <body>
+    <!--* menu -->
     <nav id="nav">
         <div class="nav_slogan">
             <p>Scientia potentia est</p>
@@ -28,8 +29,7 @@
                     <li>
                         <div class="dropdown" style="float:left;">
                             <button class="dropbtn">Родителям</button>
-                            <div class="dropdown-content" style="left:0;">
-                                <a href="#">Родителям</a>
+                            <div class="dropdown-content absolute" style="left:0;">
                                 <a href="#">Прием в школу</a>
                                 <a href="#">Расписание уроков</a>
                                 <a href="#">Расписание родителских собрани</a>
@@ -41,7 +41,7 @@
                     <li>
                         <div class="dropdown" style="float:left;">
                             <button class="dropbtn">Ученикам</button>
-                            <div class="dropdown-content" style="left:0;">
+                            <div class="dropdown-content absolute" style="left:0;">
                                 <a href="#">Ученикам</a>
                                 <a href="#">Выпускникам</a>
                             </div>
@@ -49,8 +49,8 @@
                     </li>
                     <li>
                         <div class="dropdown" style="float:left;">
-                            <button class="dropbtn">Галарея</button>
-                            <div class="dropdown-content" style="left:0;">
+                            <button class="dropbtn">Галерея</button>
+                            <div class="dropdown-content absolute" style="left:0;">
                                 <a href="#">Учетиля</a>
                                 <a href="#">Мераприятия</a>
                             </div>
@@ -62,11 +62,10 @@
     </nav>
     <div id="mySidebar" class="sidebar">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-            <a href="#">Главное</a>
-             <div class="dropdown" style="float:left;">
+        <a class="sidebar_a" href="#">Главное</a>
+        <div class="dropdown" style="float:left;">
             <button class="dropbtn">Родителям</button>
             <div class="dropdown-content" style="left:0;">
-                <a href="#">Родителям</a>
                 <a href="#">Прием в школу</a>
                 <a href="#">Расписание уроков</a>
                 <a href="#">Расписание родителских собрани</a>
@@ -82,32 +81,34 @@
             </div>
         </div>
         <div class="dropdown" style="float:left;">
-            <button class="dropbtn">Галарея</button>
+            <button class="dropbtn">Галерея</button>
             <div class="dropdown-content" style="left:0;">
                 <a href="#">Учетиля</a>
                 <a href="#">Мероприятия</a>
             </div>
         </div>
-        <!-- <a href="#">Contact</a> -->
     </div>
     <div id="main">
         <button class="openbtn" onclick="openNav()">☰ GRAMOTEY</button>
+        <!--! menu -->
         <header>
-            <div class="header_img img">
-                <div class="header_shadow">
-                    <div class="container">
-                        <div class="header_content">
-                            <div class="header_content_text">
-                                <h1>Общеобразовательное Учреждение «Грамотей»</h1>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet,
-                                    vestibulum euismod nullam elementum. Urna, posuere nisi sit gravida
-                                    massa. Ultrices bibendum sagittis pellentesque vitae sit.
-                                </p>
-                                <img src="./img/arrow_down.svg" alt="">
+            <div class="header_img">
+                <div class="img">
+                    <div class="image">
+                        <!-- <img src="./img/Panorama-pics (7).jpg" alt=""> -->
+                    </div>
+                        <div class="container">
+                            <div class="header_content">
+                                <div class="header_content_text">
+                                    <h1>Общеобразовательное Учреждение «Грамотей»</h1>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet,
+                                        vestibulum euismod nullam elementum. Urna, posuere nisi sit gravida
+                                        massa. Ultrices bibendum sagittis pellentesque vitae sit.
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                    </div>
                 </div>
             </div>
         </header>
@@ -116,7 +117,7 @@
                 <div class="container">
                     <div class="future__item">
                         <div class="future__title">
-                            <h3>Наша миссия</h3>
+                            <h3 class="secondary_header">Наша миссия</h3>
                             <p>
                                 Миссия школы – раскрыть творческий потенциал, найти уникальный
                                 дар каждого ребенка, обеспечить его успешное личностное,
@@ -178,9 +179,8 @@
         <section class="values_section">
             <div class="container">
                 <div class="title values_title">
-                    <h3>Ценности</h3>
+                    <h3 class="secondary_header">Ценности</h3>
                 </div>
-
                 <div class="values_container">
                     <div class="values_box">
                         <img src="./img/svg/values/7.svg" alt="" />
@@ -278,7 +278,7 @@
                             </div>
                         </div>
                         <div>
-                            <img height="150px" src="./img/logo & book.png" alt="">
+                            <img height="150px" src="./img/logo & book white.png" alt="">
                         </div>
                     </div>
                     <div class="footer__links">
@@ -298,7 +298,7 @@
                             </li>
                             <li>
                                 <i class="fa-solid fa-chevron-right i"></i>
-                                <a href="#">Галарея</a>
+                                <a href="#">Галерея</a>
                             </li>
                         </ul>
                     </div>
@@ -307,11 +307,11 @@
                         <p>- г.Ош, ул.Шамшиева 1а</p>
                         <div class="from">
                             <i class="fa-solid fa-phone"></i>
-                            <a href="#">+996-3222-5-64-27</a>
+                            <a class="from_a" href="#">+996-3222-5-64-27</a>
                         </div>
                         <div class="from">
                             <i class="fa-solid fa-envelope"></i>
-                            <a href="#">info@gmail.com</a>
+                            <a  class="from_a"href="#">info@gmail.com</a>
                         </div>
                     </div>
                 </div>
